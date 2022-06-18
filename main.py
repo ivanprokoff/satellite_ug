@@ -13,6 +13,7 @@ external_scripts = []
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css', dbc.themes.BOOTSTRAP, 'style.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, external_scripts=external_scripts)
+server = app.server
 
 patterns = []
 df = pd.read_csv("LOG00194.csv")
